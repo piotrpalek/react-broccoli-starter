@@ -22,7 +22,10 @@
     "broccoli-bower": "~0.2.1",
     "broccoli-6to5-transpiler": "~3.0.0",
     "broccoli-sass": "~0.3.3",
-    "broccoli-concat": "0.0.12"
+    "broccoli-concat": "0.0.12",
+    "broccoli-funnel": "~0.2.2",
+    "broccoli-stew": "~0.2.0",
+    "broccoli-es6modules": "~0.5.1"
   },
   "dependencies": {
     "broccoli-react": "~0.7.0"

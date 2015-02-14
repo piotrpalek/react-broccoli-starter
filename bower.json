@@ -2,5 +2,8 @@
   "name": "broccoli-sample-app",
   "dependencies": {
     "react": "~0.12.2"
+  },
+  "devDependencies": {
+    "loader.js": "~3.1.0"
   }
 }
