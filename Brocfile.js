@@ -1,5 +1,19 @@
 var mergeTrees = require('broccoli-merge-trees');
+var pickFiles = require('broccoli-static-compiler');
+var compileSass = require('broccoli-sass');
 
-var sourceTrees = mergeTrees(['app', 'public', 'styles']);
+var jsTree = pickFiles('app', {
+  srcDir: '/',
+  destDir: '/assets',
+  files: [
+    '**/*.js'
+  ]
+});
 
-module.exports = sourceTrees;
+var cssTree = compileSass(
+  ['styles'],
+  '/app.scss',
+  '/assets/app.css'
+);
+
+module.exports = mergeTrees([jsTree, cssTree, 'public']);
