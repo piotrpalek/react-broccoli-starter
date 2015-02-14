@@ -1,5 +1,5 @@
 var mergeTrees = require('broccoli-merge-trees');
 
-var tree = mergeTrees(['app', 'public']);
+var sourceTrees = mergeTrees(['app', 'public', 'styles']);
 
-module.exports = tree;
+module.exports = sourceTrees;
