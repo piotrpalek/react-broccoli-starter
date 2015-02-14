@@ -1,0 +1,6 @@
+{
+  "name": "broccoli-sample-app",
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
